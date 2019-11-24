@@ -14,11 +14,6 @@ To receive a passing grade on this assignment, you should meet all of the conten
 
 ###################################
 
-# Issues:
-1. The image was disappearing once i click on the link but i have fixed it by changing the image properties.
-2. I'm still working on the portfolio to make it better.
-
-
 
 
 
