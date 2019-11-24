@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-color-07cb79 theme-skin-light">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+    <!-- Icon Fonts -->
+    <link rel="stylesheet" type="text/css" href="fonts/map-icons/css/map-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.mediaelement/mediaelementplayer.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/jquery.owlcarousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="colors/green.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Modernizer for detect what features the user’s browser has to offer -->
+    <script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body class="home header-has-img loading">
+
+    <div class="mobile-nav">
+        <button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+    
+        <div class="mobile-nav-inner">
+            <nav id="mobile-nav" class="nav">
+                <ul class="clearfix">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#calendar">Calendar <span></span></a></li>
+                    <li><a href="#contact">Contact <span></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- .mobile-nav -->
+    
+    <div class="sidebar sidebar-fixed">
+        <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+    
+        <div class="widget-area">
+            <aside class="widget widget-profile">
+                <div class="profile-photo">
+                    <img src="img/uploads/khalid.jpg" alt="khalid Yassir"/>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-title">Khalid Yassir</h2>
+    
+                    <h3 class="profile-position">Database administrator and Full stack Developer</h3>
+                </div>
+            </aside>
+            <!-- .widget-profile -->
+    
+            <aside class="widget widget_search">
+                <h2 class="widget-title">Search</h2>
+    
+                <form class="search-form">
+                    <label class="ripple">
+                        <span class="screen-reader-text">Search for:</span>
+                        <input class="search-field" type="search" placeholder="Search">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </aside>
+            <!-- .widget_search -->
+    
+            <aside class="widget widget_contact">
+                <h2 class="widget-title">Contact Me</h2>
+    
+                <form class="rsForm" action="php/mailsender.php" method="post">
+                    <div class="input-field">
+                        <label>Name</label>
+                        <input type="text" name="rsName" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input type="email" name="rsEmail" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Subject</label>
+                        <input type="text" name="rsSubject" value="">
+                        <span class="line"></span>
+                    </div>
+    
+                    <div class="input-field">
+                        <label>Message</label>
+                        <textarea rows="4" name="rsMessage"></textarea>
+                        <span class="line"></span>
+                    </div>
+					
+					<div class="check-field">
+						<input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicyWidget">
+						<label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
+					</div>
+    
+                    <span class="btn-outer btn-primary-outer ripple">
+                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                    </span>
+                </form>
+            </aside>
+            <!-- .widget_contact -->
+    
+            <aside class="widget widget-popuplar-posts">
+                <h2 class="widget-title">Popular posts</h2>
+                <ul>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-1.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-2.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-media"><a href=""><img src="img/uploads/thumb-78x56-3.jpg" alt=""/></a></div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                </ul>
+            </aside>
+            <!-- .widget-popuplar-posts -->
+    
+            <aside class="widget widget_tag_cloud">
+                <h2 class="widget-title">Tag Cloud</h2>
+    
+                <div class="tagcloud">
+                    <a href="" title="1 topic">Business</a>
+                    <a href="" title="9 topics">City</a>
+                    <a href="" title="10 topics">Creative</a>
+                    <a href="" title="6 topics">Fashion</a>
+                    <a href="" title="2 topics">Music</a>
+                    <a href="" title="5 topics">News</a>
+                    <a href="" title="9 topics">Peoples</a>
+                </div>
+            </aside>
+            <!-- .widget_tag_cloud -->
+    
+            <aside class="widget widget-recent-posts">
+                <h2 class="widget-title">Recent posts</h2>
+                <ul>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                    <li>
+                        <div class="post-tag">
+                            <a href="">#Photo</a>
+                            <a href="">#Architect</a>
+                        </div>
+                        <h3 class="post-title"><a href="">Standard Post Format With Featured Image</a></h3>
+    
+                        <div class="post-info"><a href=""><i class="rsicon rsicon-comments"></i>56 comments</a></div>
+                    </li>
+                </ul>
+            </aside>
+            <!-- .widget-recent-posts -->
+    
+            <aside class="widget widget_categories">
+                <h2 class="widget-title">Categories</h2>
+                <ul>
+                    <li><a href="" title="Architecture Category Posts">Architecture</a> (9)</li>
+                    <li><a href="" title="Business Category Posts">Business</a> (16)</li>
+                    <li><a href="" title="Creative Category Posts">Creative</a> (18)</li>
+                    <li><a href="" title="Design Category Posts">Design</a> (10)</li>
+                    <li><a href="" title="Development Category Posts">Development</a> (14)</li>
+                    <li><a href="" title="Education Category Posts">Education</a> (9)</li>
+                </ul>
+            </aside>
+            <!-- .widget_categories -->
+        </div>
+        <!-- .widget-area -->
+    </div>
+    <!-- .sidebar -->
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="head-bg" style="background-image: url('img/uploads/rs-cover.jpg')"></div>
+        
+            <div class="head-bar">
+                <div class="head-bar-inner">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6">
+                            <a class="logo" href="index.html"><span>Hel</span>LO</a>
+                            <!-- <a class="head-logo" href=""><img src="img/rs-logo.png" alt="Portfolio"/></a> -->
+                        </div>
+        
+                        <div class="col-sm-9 col-xs-6">
+                            <div class="nav-wrap">
+                                <nav id="nav" class="nav">
+                                    <ul class="clearfix">
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#skills">Skills</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>
+                                        <li><a href="#experience">Experience</a></li>
+                                        <li><a href="#references">References</a></li>
+                                        <li><a href="#calendar">Calendar <span></span></a></li>
+                                        <li><a href="#contact">Contact <span></span></a></li>
+                                    </ul>
+                                </nav>
+        
+                                <button class="btn-mobile btn-mobile-nav">Menu</button>
+                                <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button>
+                            </div>
+                            <!-- .nav-wrap -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .header -->
+        
+        <div class="content">
+            <div class="container">
+    
+            <!-- START: PAGE CONTENT -->
+            <section id="about" class="section section-about">
+                <div class="animate-up">
+                    <div class="section-box">
+                        <div class="profile">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <div class="profile-photo"><img src="img/uploads/khalid.jpg" alt="Khalid Yassir"/></div>
+                                </div>
+                                <div class="col-xs-7">
+                                    <div class="profile-info">
+                                        <div class="profile-preword"><span>Hello</span></div>
+                                        <h1 class="profile-title"><span>I'm</span> Khalid Yassir</h1>
+            
+                                        <h2 class="profile-position">Database administrator and Full Stack Developer </h2></div>
+                                    <ul class="profile-list">
+                                        <li class="clearfix">
+                                            <strong class="title">Age</strong>
+                                            <span class="cont">66</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">Address</strong>
+                                            <span class="cont">1133 SW 139th ST Burien, WA, 98166, #250</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">E-mail</strong>
+                                            <span class="cont"><a href="mailto:robertsmith@company.com">k_a10@hotmail.com</a></span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">Phone</strong>
+                                            <span class="cont"><a href="tel:+12562548456">425-525-9454</a></span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title">Company</strong>
+                                            <span class="cont">Northwest Kidney Centers</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <strong class="title"><span class="button">On Vacation</span></strong>
+                                            <span class="cont"><i class="rsicon rsicon-calendar"></i>till Oct 2nd, 2019</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-social">
+                            <ul class="social">
+                                <li><a class="ripple-centered" href="https://www.facebook.com" target="_blank"><i
+                                        class="rsicon rsicon-facebook"></i></a></li>
+                                <li><a class="ripple-centered" href="https://twitter.com" target="_blank"><i
+                                        class="rsicon rsicon-twitter"></i></a></li>
+                                <li><a class="ripple-centered" href="https://www.linkedin.com" target="_blank"><i
+                                        class="rsicon rsicon-linkedin"></i></a></li>
+                                <li><a class="ripple-centered" href="https://plus.google.com" target="_blank"><i
+                                        class="rsicon rsicon-google-plus"></i></a></li>
+                                <li><a class="ripple-centered" href="https://dribbble.com" target="_blank"><i
+                                        class="rsicon rsicon-dribbble"></i></a></li>
+                                <li><a class="ripple-centered" href="https://www.instagram.com" target="_blank"><i
+                                        class="rsicon rsicon-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="section-txt-btn">
+                        <p><a class="btn btn-lg btn-border ripple" target="_blank"
+                              href="https://drive.google.com/file/d/1JwMI39JvZSxLpQ7e_OQ8ZxWmMa21YEDh/view?usp=sharing">Download Resume</a></p>
+            
+                        <p>Hello! I'm Khalid Yassir. A database administrator and a full stack Web Developer. Experienced with all
+                            stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages
+                            including JavaScript, SQL, and PL/SQL. Stng background in project management and customer relations.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- #about -->
+            
+            <section id="skills" class="section section-skills">
+                <div class="animate-up">
+                    <h2 class="section-title">Professional Skills</h2>
+            
+                    <div class="section-box">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">SQL</span>
+                                        <span class="bar-value">80%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="51%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">JavaScript</span>
+                                        <span class="bar-value">52%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="67%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Unix</span>
+                                        <span class="bar-value">80%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="79%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">HTML & CSS</span>
+                                        <span class="bar-value">89%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="67%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">ORacle & Microsoft SQL server</span>
+                                        <span class="bar-value">99%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="54%"></span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-6">
+                                <div class="progress-bar">
+                                    <div class="bar-data">
+                                        <span class="bar-title">Photoshop</span>
+                                        <span class="bar-value">40%</span>
+                                    </div>
+                                    <div class="bar-line">
+                                        <span class="bar-fill" data-width="80%"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #skills -->
+            
+            <section id="portfolio" class="section section-portfolio">
+            <div class="animate-up">
+            <h2 class="section-title">Project and home work</h2>
+            
+            <div class="filter">
+                <div class="filter-inner">
+                    <div class="filter-btn-group">
+                        <button data-filter="*">All</button>
+                       
+                    </div>
+                    <div class="filter-bar">
+                        <span class="filter-bar-line"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="grid-sizer"></div>
+            
+                <div class="grid-item size22 photography">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/portfolio/recipes.PNG" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Recipes</h3>
+                                    <h4 class="portfolio-cat">Click below to select recipes and to see the code</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="https://magarman.github.io/Recipes/" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                        <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox1"
+                                           href="https://github.com/ky82/Train_Scheduler"><i class="rsicon rsicon-eye"></i></a>
+                                    </div>
+                                  
+                                </div>
+                            </figcaption>
+                        </figure>
+            
+                        <!-- Start: Portfolio Inline Boxes -->
+                       
+            
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            
+                <div class="grid-item size11 bridge">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/portfolio/train.PNG" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Train_Scheduler</h3>
+                                    <h4 class="portfolio-cat">Click on the below button for the game and code</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="https://ky82.github.io/Train_Scheduler/" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                        <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox1"
+                                           href="https://github.com/ky82/Train_Scheduler"><i class="rsicon rsicon-eye"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+            
+                        <!-- Start: Portfolio Inline Boxes -->
+                       
+                        <!-- End: Portfolio Inline Boxes -->
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            
+                <div class="grid-item size11 nature photography">
+                    <div class="grid-box">
+                        <figure class="portfolio-figure">
+                            <img src="img/uploads/portfolio/Giphy.png" alt=""/>
+                            <figcaption class="portfolio-caption">
+                                <div class="portfolio-caption-inner">
+                                    <h3 class="portfolio-title">Giphy</h3>
+                                    <h4 class="portfolio-cat">Click on button to see giphies and their code</h4>
+            
+                                    <div class="btn-group">
+                                        <a class="btn-link" href="https://ky82.github.io/Giphy/" target="_blank"><i
+                                                class="rsicon rsicon-link"></i></a>
+                                        <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox1"
+                                           href="https://github.com/ky82/Giphy"><i class="rsicon rsicon-eye"></i></a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+            
+                        <!-- Start: Portfolio Inline Boxes -->
+                        <div id="portfolio3-inline1" class="fancybox-inline-box">
+                            <div class="inline-embed" data-embed-type="image"
+                                 data-embed-url="img/uploads/portfolio/portfolio-thumb-08-large.jpg"></div>
+                        </div>
+            
+                        <div id="portfolio3-inline2" class="fancybox-inline-box">
+                            <div class="inline-embed" data-embed-type="image"
+                                 data-embed-url="img/uploads/portfolio/portfolio-thumb-04-large.jpg"></div>
+                        </div>
+            
+                        <div id="portfolio3-inline3" class="fancybox-inline-box">
+                            <div class="inline-embed" data-embed-type="image"
+                                 data-embed-url="img/uploads/portfolio/portfolio-thumb-02-large.jpg"></div>
+                        </div>
+                        <!-- End: Portfolio Inline Boxes -->
+                    </div>
+                </div>
+                <!-- .grid-item -->
+            </div>
+            
+            <div class="grid-more">
+                <span class="ajax-loader"></span>
+                <button class="btn btn-border ripple"><i class="rsicon rsicon-add"></i></button>
+            </div>
+            </div>
+            </section>
+            <!-- #portfolio -->
+            
+            <section id="experience" class="section section-experience">
+                <div class="animate-up">
+                    <h2 class="section-title">Work Experience</h2>
+            
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+                            <div class="timeline-box timeline-box-left">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date">2017 - current</div>
+                                    <h3>Northwest Kidney Centers</h3>
+                                    <h4>IT Tech and application Support Services Specialists</h4>
+            
+                                    <p>Install and troubleshoot mobile device, cisco phones and laptop hardware and user peripherals.
+                                        Creates/Deletes and maintains network login accounts for users.
+                                        Troubleshoot corrupted software by checking logs, reinstalling applications, or checking for patches.
+                                        Create and update troubleshooting and technical document.</p>
+                                </div>
+                            </div>
+            
+                            <div class="timeline-box timeline-box-right">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date">2015 - 2017</div>
+                                    <h3>National Health Insurance Company</h3>
+                                    <h4>Senior Database Administrator</h4>
+            
+                                    <p>Manage Oracle and MSSQL databases administration assignments for the company.
+                                       Enhance database performance, perform restores, implement backup and recovery procedures, handle performance
+                                       tuning and conduct regular system backups. Ensure technical and functional designs meet business requirements.</p>
+                                </div>
+                            </div>
+            
+                            <div class="timeline-box timeline-box-left">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date">2009 - 2015</div>
+                                    <h3>Barwa Bank</h3>
+                                    <h4>Database Administrator</h4>
+            
+                                    <p>Responsible for design, implementation, and maintenance of over 100+ oracle and MSSQL databases.
+                                            The role includes developing and designing the database strategy, monitoring and improving database performance and 
+                                            capacity planning for future expansion requirements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #experience -->
+            
+            <section id="education" class="section section-education">
+                <div class="animate-up">
+                    <h2 class="section-title">Education</h2>
+            
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-inner clearfix">
+            
+                            <div class="timeline-box timeline-box-compact timeline-box-left">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-right">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date"><span>2005 - 2007</span></div>
+                                    <h3>Master of computer application</h3>
+                                    <h4>Sikkim Manipal University</h4>
+                                </div>
+                            </div>
+            
+                            <div class="timeline-box timeline-box-compact timeline-box-right">
+                                <span class="dot"></span>
+            
+                                <div class="timeline-box-inner animate-left">
+                                    <span class="arrow"></span>
+            
+                                    <div class="date"><span>2002 - 2005</span></div>
+                                    <h3>Bachelor Computer Application</h3>
+                                    <h4>Osmania University</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #education -->
+            
+            <section id="clients" class="section section-clients">
+                <div class="animate-up">
+            
+                    <div class="clients-carousel">
+                        <div class="client-logo">
+                            <a href="http://market.envato.com" target="_blank"><img src="img/uploads/logos/logo-envato.png"
+                                                                                    title="envato" alt="envato"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <img src="img/uploads/logos/logo-angularjs.png" title="angular js" alt="angular js"/>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://www.omniref.com/ruby/gems/teaspoon/0.7.9" target="_blank"><img
+                                    src="img/uploads/logos/logo-teaspoon.png" title="teaspoon" alt="teaspoon"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://wordpress.com" target="_blank"><img src="img/uploads/logos/logo-wordpress.png"
+                                                                                 title="wordpress" alt="wordpress"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://evernote.com" target="_blank"><img src="img/uploads/logos/logo-evernote.png"
+                                                                                title="evernote" alt="evernote"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="http://compass-style.org" target="_blank"><img src="img/uploads/logos/logo-compass.png"
+                                                                                    title="compass" alt="compass"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="http://getbootstrap.com" target="_blank"><img src="img/uploads/logos/logo-bootstrap.png"
+                                                                                   title="bootstrap" alt="bootstrap"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="http://jasmine.github.io" target="_blank"><img src="img/uploads/logos/logo-jasmine.png"
+                                                                                    title="jasmine" alt="jasmine"/></a>
+                        </div>
+            
+                        <div class="client-logo">
+                            <a href="https://jquery.com" target="_blank"><img src="img/uploads/logos/logo-jquery.png" title="jquery"
+                                                                              alt="jquery"/></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #clients -->
+            
+            <section id="references" class="section section-references">
+                <div class="animate-up">
+                    <h2 class="section-title">References</h2>
+            
+                    <div class="section-box">
+                        <ul class="ref-slider">
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I have known Khalid Yassir for 2 years as IT Tech and application Support. I can confirm that he is a man
+                                                of great integrity, is extremely dedicated to his family and work.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-photo-v1.jpg" alt="Headshot">
+            
+                                        <div class="person-name-title">
+                                            <span class="person-name">Sarah Robinson</span>
+                                            <span class="person-title">Northwest Kidney Center , IT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I have known Khalid Yassir for 2 years as database administrator. I can confirm that he is a man
+                                            of great integrity, is extremely dedicated
+                                            to his family and work, and is entirely peace-loving.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+            
+                                        <div class="person-name-title">
+                                            <span class="person-name">Mohand</span>
+                                            <span class="person-title">National Health Insurance , IT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="ref-box">
+                                    <div class="person-speech">
+                                        <p>I have known Khalid Yassir for 5 years as database administrator. I can confirm that he is a man
+                                            of great integrity, is extremely dedicated
+                                            to his family and work, and is entirely peace-loving.</p>
+                                    </div>
+                                    <div class="person-info clearfix">
+                                        <img class="person-img" src="img/uploads/rs-avatar-60x60.jpg" alt="Headshot">
+            
+                                        <div class="person-name-title">
+                                            <span class="person-name">Kashif Khan</span>
+                                            <span class="person-title">Barwa Bank, , IT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="ref-slider-nav">
+                            <span id="ref-slider-prev" class="slider-prev"></span>
+                            <span id="ref-slider-next" class="slider-next"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #references -->
+            
+           
+      
+            
+            <section id="interests" class="section section-interests">
+                <div class="animate-up">
+                    <h2 class="section-title">My Interests</h2>
+            
+                    <div class="section-box">
+                        <p>I have a keen interest in photography. I was vice-president of the photography club during my time at
+                            university,
+                            and during this period I organised a number of very successful exhibitions and events both on and off
+                            campus.
+                            <br/>I also play the piano to grade 8 standard.</p>
+            
+                        <ul class="interests-list">
+                            <li>
+                                <i class="map-icon map-icon-bicycling"></i>
+                                <span>Bicycling</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-movie-theater"></i>
+                                <span>Watch Movies</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-ice-skating"></i>
+                                <span>Skating</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-shopping-mall"></i>
+                                <span>Shopping</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-tennis"></i>
+                                <span>Playing Tennis</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-bowling-alley"></i>
+                                <span>Playing Bowling</span>
+                            </li>
+                            <li>
+                                <i class="map-icon map-icon-swimming"></i>
+                                <span>Swimming</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- #interests -->
+            
+            <section id="calendar" class="section section-calendar">
+                <div class="animate-up">
+                    <h2 class="section-title">Availability Calendar</h2>
+            
+                    <div id="busyCalendar" class="calendar-busy">
+                        <div class="calendar-today" style="background-image: url('img/uploads/rs-calendar-cover.jpg')">
+                            <div class="valign-outer">
+                                <div class="valign-middle">
+                                    <div class="valign-inner">
+                                        <div class="date">
+                                            <span class="day"></span>
+                                            <span class="month"></span>
+                                        </div>
+                                        <div class="week-day"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="calendar-cont">
+                            <div class="calendar-header">
+                                <div class="calendar-nav">
+                                    <span class="active-date"><span class="active-month"></span><span
+                                            class="active-year"></span></span>
+                                    <a class="calendar-prev ripple-centered" title="Prev"><i class="rsicon rsicon-chevron_left"></i></a>
+                                    <a class="calendar-next ripple-centered" title="Next"><i
+                                            class="rsicon rsicon-chevron_right"></i></a>
+                                </div>
+                            </div>
+            
+                            <table class="calendar-body">
+                                <thead class="calendar-thead"></thead>
+                                <tbody class="calendar-tbody"></tbody>
+                            </table>
+                            <div class="calendar-busy-note">Sorry. I'm not available on those days</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #calendar -->
+            
+            <section id="contact" class="section section-contact">
+                <div class="animate-up">
+                    <h2 class="section-title">Contact Me</h2>
+            
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="section-box contact-form">
+                                <h3>Feel free to contact me</h3>
+            
+                                <form class="rsForm" action="php/mailsender.php" method="post">
+                                    <div class="input-field">
+                                        <label>Name</label>
+                                        <input type="text" name="rsName" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="email" name="rsEmail" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Subject</label>
+                                        <input type="text" name="rsSubject" value="">
+                                        <span class="line"></span>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Message</label>
+                                        <textarea rows="4" name="rsMessage"></textarea>
+                                        <span class="line"></span>
+                                    </div>
+									
+									<div class="check-field">
+										<input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicy">
+										<label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
+									</div>
+            
+                                    <span class="btn-outer btn-primary-outer ripple">
+                                        <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send">
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-6">
+                            <div class="section-box contact-info has-map">
+                                <ul class="contact-list">
+                                    <li class="clearfix">
+                                        <strong>Address</strong>
+                                        <span>1133 SW 139th ST, Burien, WA, 98166, #250</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>phone</strong>
+                                        <span><a href="tel:+12562548456">425-525-9454</a></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <strong>E-mail</strong>
+                                        <span><a href="mailto:k_a10@hotmail.com">k_a10@hotmail.com</a></span>
+                                    </li>
+                                </ul>
+            
+                                <div id="map" data-latitude="47.470379" data-longitude="-122.346794"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #contact -->
+            <!-- END: PAGE CONTENT -->
+    
+        </div>
+        <!-- .container -->
+    </div>
+    <!-- .content -->
+    
+    <footer class="footer">
+        <div class="footer-social">
+            <ul class="social">
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-twitter"></i></a></li>
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-google-plus"></i></a></li>
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-dribbble"></i></a></li>
+                <li><a class="ripple-centered" href="" target="_blank"><i class="rsicon rsicon-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- .footer -->
+	
+    </div>
+    <!-- .wrapper -->
+    
+    <a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
+    
+    <div id="overlay"></div>
+    <div id="preloader">
+        <div class="preload-icon"><span></span><span></span></div>
+        <div class="preload-text">Loading ...</div>
+    </div>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="fonts/map-icons/js/map-icons.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.onepagenav.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.mediaelement/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.fancybox/helpers/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>
